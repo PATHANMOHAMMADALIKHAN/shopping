@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <style>
+    .navbar,
+    dropdown,
+    nav-link,
+    .btn,
+    .num {
+      background-color: black !important;
+      padding: 10px;
+      border: none;
+    }
+
+    .nav-link {
+      color: white;
+    }
+
+    .nav {
+      text-decoration: none;
+      color: white;
+      margin-left: 20px;
+    }
+
+    .nav1 {
+      text-decoration: none;
+      color: black;
+      margin-right: auto;
+      margin-top: auto;
+      text-align: center;
+    }
+
+    .search {
+      border-radius: 30px;
+    }
+
+    #icon {
+      margin: 15px;
+    }
+
+    .search1 {
+      color: white;
+      background-color: rgb(4, 107, 249);
+      border: none;
+      border-radius: 90px;
+      width: 100px;
+      padding: 5px;
+    }
+
+    .back-image {
+      background-image: url("Asset/hero/h1_hero.jpg");
+      overflow: hidden;
+
+    }
+
+    .hero {
+      width: 35%;
+    }
+
+    .btn1 {
+      background-color: rgb(4, 107, 249) !important;
+      width: 145px;
+      padding: 10px;
+      border: none;
+      color: white;
+    }
+
+    h4 {
+      padding: 150px;
+      text-align: center;
+      padding-bottom: 35px;
+    }
+
+    .card {
+      padding: 20px;
+      margin: none;
+      border: none;
+
+    }
+
+    .container {
+      text-align: end;
+    }
+
+    .btn {
+      background-color: yellow;
+      color: white;
+      line-height: 100%;
+    }
+
+    .navlink {
+      background-color: white;
+    }
+
+    .threenavbar {
+      background-color: none;
+      color: black;
+      margin: 25px;
+    }
+
+    .nav-link1 {
+      background-color: none;
+      color: black;
+      text-decoration: none;
+      border: 25%;
+    }
+
+    .nav-link2 {
+      color: black;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .secondback-image {
+      background-image: url(./Asset/categori/card.png);
+      margin-left: 90px;
+      margin-right: 90px;
+      background-repeat: no-repeat;
+      background-position-y: 100px;
+
+
+      height: 600px;
+      position: relative;
+    }
+
+    .second-back {
+      background-position-x: 80px;
+      position: relative;
+
+    }
+
+    .fourthback-image {
+      background-image: url(./Asset/collection/latest-offer.png);
+      background-repeat: no-repeat;
+      margin-left: 70px;
+      margin-right: 70px;
+      height: 700px;
+    }
+    #small-image{
+      text-align: left;
+      font-size: 30px;
+      margin-left: 25px;
+    }
+    .card-title{
+      text-align: left;
+    }
+    .threecard-text{
+      text-align: left;
+    }
+    .group-images{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 10px !important;
+      
+    }
+
+
+
+
+    /* .secondback-image{
+        background-image: url(./Asset/categori/card.png);
+        position: relative;
+        overflow: hidden;
+        background-position-y: 90px;
+        height: 575px;
+        background-repeat: no-repeat;
+       }
+       .btn3{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 140px;
+        border: none;
+       }
+       .img2-fluid{
+        height: 550px;
+        margin-left:200px ;
+        margin-bottom: 900px;
+        
+
+       }
+       .third-image{
+        color: white;
+        background-color: rgb(4,107,249);
+        border-radius: 20px;
+        border: none;
+        width: 150px;
+        padding: 10px;
+       }
+       .card-shirt{
+        position: relative;
+        background-position-x: 20px;
+       }
+       .second-text{
+        text-align: left;
+        
+       } */
+  </style>
+</head>
+
+<body>
+  <!-- first nav -bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <img src="./Asset/icon/header_icon1.png" alt="IND" width="35px" p="20px">
+
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          IND
+        </button>
+
+      </div>
+      <input style="color: white!important" type="num" class="num text-white" placeholder="+91 7013131897">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav" href="#">My Account</a>
+          <a class="nav ms-4" href="#">Wishlist</a>
+          <a class="nav" href="#">Shopping</a>
+          <a class="nav" href="#">Cart</a>
+          <a class="nav " href="#">CheckOut</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- second nav bar  -->
+  <div>
+    
+    <nav class="navbar1 bg-body-tertiary">
+      <div class="container-fluid " style="padding: 15px; display: flex;">
+        <a class="navbar-brand" href="#">
+          <img src="./Asset/logo/Logo.png" alt="Logo" width="150" height="50" class="d-inline-block " style="margin-right: 100px;">
+        </a>
+        <ul style="margin: 0px; padding: 0px; display: inline-block; text-decoration: none; display: flex; list-style-type: none;">
+          <li><a  class="nav1 me-5 ms-4" href="#" style="margin-left: 25px;" >Home</a></li>
+          <li><a class="nav1 me-5 ms-4" href="#" style="margin-left: 100px;">Category</a></li>
+          <li><a class="nav1 me-5 ms-4" href="#">Latest <sup  ><button style="background-color: red; color: white; height: 19px; text-shadow: 45px; border: none;border-radius: 15px;margin-bottom: 25px; ">HOT</button></sup></a></li>
+          <li><a class="nav1 me-5 ms-4" href="#">Blog</a></li>
+          <li><a class="nav1 me-5 ms-4" href="#">Pages</a></li>
+          <li><a class="nav1 me-5 ms-4" href="#">Contact</a></li>
+        </ul>
+        <input type="text" class="search"  style="margin-left: 30px; height: 35px;border: none;" placeholder="search products" >
+        <i class="fa-light fa-magnifying-glass"></i>
+        <i id="icon" class="fa-solid fa-heart fa-lg" ><sup><button style="color: white;border: none;background-color: #3aa2ec; height: 20px;border-radius: 39px; width: 22px; font-size: 10px;">02</button></sup></i>
+        <i id="icon" class="fa-solid fa-cart-shopping fa-lg"><sup><button style="color: white;border: none;background-color: rgb(49, 153, 239); height: 20px;border-radius: 39px; width: 22px; font-size: 10px;">02</button></sup></i>
+        <button style="height: 40px;" class="search1">Sign In</button>
+      </div>
+    </nav>
+  </div>
+  
+  <!-- image -->
+  <div class="back-image">
+    <div class="container-fluid  mb-1" id="back">
+      <div class="row">
+        <div class="col">
+          <img src="/Asset/hero/hero_man.png" alt="" style="height:600px;">
+        </div>
+        <div class="col" style=" margin-top:200px;">
+          <h5 style="font-style: italic; color:
+             rgb(5, 181, 239); font-weight: 450px; font-family: 'Times New Roman', Times, serif;"><b>60% Discount </b>
+          </h5>
+          <h2 style="font-weight:500px ; font-size: 100px; font-family: 'Times New Roman', Times, serif;">Winter</h2>
+          <h2 style="font-weight:500px ; font-size: 100px;font-family: 'Times New Roman', Times, serif; ">Collection
+          </h2>
+          <h6 style="font-style: italic; font-family: 'Times New Roman', Times, serif;">Best cloth collection By 2020
+          </h6>
+
+          <button class="btn1 btn-primary rounded-pill " type="submit">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4 style="font-weight:100px ; font-size: 50px; font-family: 'Times New Roman', Times, serif; text-align: center">
+      <b>Shop by Category</b>
+    </h4>
+    <!--three cards  -->
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 28rem;">
+          <img src="/Asset/categori/cat1.jpg" class="card-img-top" alt="...">
+          <div class="card-img-overlay  mt-4 ml-4 me-5">
+            <h2 class="card-title mt-4 mr-4 ml-4"
+              style="font-weight: 10px; font-size: 20px; font-family: 'Times New Roman', Times, serif; text-align: right;">
+              <b>Women's</b>
+            </h2>
+            <a href="#" class="btn btn-primary mb-1 ml-7"
+              style="border-radius: 25px; background-color: rgb(240, 240, 6) !important; color: black;  "><b>Best
+              New Deals</b></a>
+            <p class="card-text  me-9" style="font-size: large; color: rgb(4,107,249); font-family: Arial, Helvetica, sans-serif;"><b>New Collection</b> </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 28rem;">
+          <img src="/Asset/categori/cat2.jpg" class="card-img-top" alt="...">
+          <div class="card-img-overlay mt-5 me-5 ">
+            <p class="card-text" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; margin-right: 40px; color: rgb(4, 107, 249);"  ><b>Discount !</b></p>
+            <h5 class="card-title" style="margin-left: 230px; "><b>Winter Cloth</b></h5>
+
+            <p class="btn-1 btn-primary" style="margin-right: 20px;"><b>New Collection</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 28rem;">
+          <img src="/Asset/categori/cat3.jpg" class="card-img-top" alt="...">
+          <div class="card-img-overlay mt-5 me-5">
+            <h5 class="card-title" style="margin-left: 240px;">Man's Cloth</h5>
+
+            <a href="#" class="btn btn-primary"
+              style="border-radius: 55px; color: black; background-color: rgb(240, 240, 6) !important; padding: 10px;">Best
+              New Deals</a>
+            <p class="card-text me-3"> New Collection </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br>
+  <!-- latest products nav-bar -->
+  <div>
+    <nav class="threenavbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid" style="background-color: white;">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="threenavbar-nav" style="margin-left: 100px;">
+            <a class="nav-link2 me-5 ms-auto " href="#" style="text-align: right; margin-left: 500px;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><b>Latest Products</b></a>
+            <span>
+              <a class="nav-link1 me-5  ml-4 " href="#" style="color: red; margin-left: 550px;margin-right: 170px;">All</a>
+            <a class="nav-link1 me-5 ml-4" href="#">New</a>
+            <a class="nav-link1 me-5 ml-4" href="#">Featured</a>
+            <a class="nav-link1 me-9 " href="#">Offer</a>
+            </span>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- 6-photos  (1st image)-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <button style="color: white;background-color: red; border-radius: 40px; width: 55px !important; border: none;">NEW</button>
+          <img src="./Asset/categori/product1.png" class="card-img-top" alt="...">
+          
+          <div class="card-body ">
+            <span style="display: flex;justify-content: center;">
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i><br>
+            </span>
+            <p class="card-text me-3">Green dress with details</p>
+            <span style="display: flex;justify-content: center; gap: 15px;">
+              <h5>$40.00</h5>
+              <h5 style="color: red; text-decoration: line-through;">$60.00</h5>
+            </span>
+
+
+          </div>
+        </div>
+
+      </div>
+      <!-- 2nd image -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./Asset/categori/product2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span style="display: flex;justify-content: center;">
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i><br>
+            </span>
+            <p class="card-text me-3">Green dress with details</p>
+            <span style="display: flex;justify-content: center; gap: 15px;">
+              <h5>$40.00</h5>
+              <h5 style="color: red; text-decoration: line-through;">$60.00</h5>
+            </span>
+          </div>
+        </div>
+
+      </div>
+      <!-- 3rd image -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <button style="color: white;background-color: red; border-radius: 40px; width: 55px !important; border: none;">NEW</button>
+          <img src="./Asset/categori/product3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span style="display: flex;justify-content: center;">
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i><br>
+            </span>
+            <p class="card-text me-3">Green dress with details</p>
+            <span style="display: flex;justify-content: center; gap: 15px;">
+              <h5>$40.00</h5>
+              <h5 style="color: red; text-decoration: line-through;">$60.00</h5>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- 4th image -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./Asset/categori/product4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span style="display: flex;justify-content: center;">
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i><br>
+            </span>
+            <p class="card-text me-3">Green dress with details</p>
+            <span style="display: flex;justify-content: center; gap: 15px;">
+              <h5>$40.00</h5>
+              <h5 style="color: red; text-decoration: line-through;">$60.00</h5>
+            </span>
+          </div>
+        </div>
+
+      </div>
+      <!-- 5th image -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="./Asset/categori/product5.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span style="display: flex;justify-content: center;">
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i>
+            </span>
+            <p class="card-text me-3">Green dress with details</p>
+            <span style="display: flex;justify-content: center; gap: 15px;">
+              <h5>$40.00</h5>
+              <h5 style="color: red; text-decoration: line-through;">$60.00</h5>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- 6th image -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <button style="color: white;background-color: red; border-radius: 40px; width: 55px !important; border: none;">NEW</button>
+          <img src="./Asset/categori/product6.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span style="display: flex;justify-content: center;">
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i>
+              <i class="fa-regular fa-star" style="color: grey;"></i>
+            </span>
+            <p class="card-text me-3">Green dress with details</p>
+            <span style="display: flex;justify-content: center; gap: 15px;">
+              <h5>$40.00</h5>
+              <h5 style="color: red; text-decoration: line-through;">$60.00</h5>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- second bg-image -->
+  <div class="secondback-image">
+    <div class="container-fluid  mb-1" id="back">
+      <div class="row">
+        <div class="col">
+          <img src="/Asset/categori/card-man.png" alt="" style="height:600px; margin-left: 320px;">
+        </div>
+        <div class="col" style=" margin-top:200px;">
+
+          <h2
+            style="font-weight:50px ; font-size: 50px; font-family: 'Times New Roman', Times, serif; margin-right: 120px;">
+            <b>Find The Best Product <br>from Our Shop</b></h2>
+          <h2 style="font-weight:500px ; font-size: 20px;font-family: 'Times New Roman', Times, serif; ">Designers who
+            are interesten creating state ofthe.</h2><br>
+          <button class="btn3 btn-primary rounded-pill "
+            style="background-color: black; color: white; width: 140px; padding: 10px; border: none;" type="submit">Shop
+            Now</button>
+          <img style="margin-left: 190px;" src="./Asset/categori/card-shape.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div><br><br><br><br>
+
+    
+    <div class="container">
+      <div class="row">
+        <!-- 1st col-image -->
+        <div class="card" style="width: 25rem; height: 25rem;">
+          <div class="card-body">
+            <h5 class="card-title"
+              style="text-align: left; font-size: 40px; font-family: 'Times New Roman', Times, serif;margin-top: 100px;">
+              <b>Best Collections of This Month</b>
+            </h5>
+            <p class="card-text" style="text-align: left;font-family: 'Times New Roman', Times, serif;">Designers who
+              are interesten crea.</p>
+            <button
+              style="background-color: rgb(4,107,249); border-radius: 30px; width: 135px; border: none;color: white;margin-right: 200px;margin-top: 25px; padding: 10px;">Shop
+              Now</button>
+          </div>
+          <img src="./Asset/collection/collection1.png" class="card-img-top"
+            style="height:550px; width: 200px; margin-top: 190px;margin-bottom: 120px;" alt="...">
+        </div>
+        <!-- 2st col-image -->
+        <div class="card" style="width: 25rem; ">
+          <img src="./Asset/collection/collection2.png" class="card-img-top" style="height: 650px;" alt="...">
+          
+        </div>
+        <!-- 3rd col-image -->
+        <div class="card" style="width: 25rem;">
+          <div>
+            <button
+              style="border: none;background-color: white;text-align: right;padding-top: 0px; margin-top: 190px; font-size:20px ;  ">Menz
+              Winter <br> Jacket</button>
+            <img style="margin-bottom: 25px;width: 120px;" src="./Asset/collection/collection3.png" alt="...">
+          </div>
+          <div>
+            <button
+              style="border: none;background-color:rgb(4,107,249);text-align: right;padding: 10px; border-radius: 15px;color: white;font-size: 18px; ">Menz
+              Winter <br> Jacket</button>
+            <img style="margin-bottom: 25px; width: 120px;" src="./Asset/collection/collection4.png" alt="...">
+          </div>
+          <div>
+            <button
+              style="border: none;background-color: white;text-align: right;padding: 10px; margin-left: 100px;font-size: 20px; ">Menz
+              Winter <br> Jacket</button>
+            <img style="margin-bottom: 25px; width: 120px;" src="./Asset/collection/collection5.png" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fourth bg image -->
+  <div class="fourthback-image">
+    <div class="container-fluid  mb-1" id="back">
+      <div class="row">
+        <div class="col">
+          <img src="/Asset/collection/latest-man.png" alt="" style="height:350px; margin-left: 20px; margin-top: 50px;">
+        </div>
+        <div class="col" style=" margin-top:100px;">
+
+          <h2
+            style="font-weight:50px ; font-size: 50px; font-family: 'Times New Roman', Times, serif;  text-align: left;height: 120px; ">
+            <b>Get Our <br>latest Offers News</b></h2>
+          <h2 style="font-weight:500px ; font-size: 20px;font-family: 'Times New Roman', Times, serif; ">Subscribe news
+            latter</h2>
+
+          <input type="text" class="four-search" text-black placeholder="Your email here"
+            style="border-radius: 30px; height: 40px; width: 120; border-right: none; border: none; text-align:left; ">
+          <button class="btn3 btn-primary rounded-pill "
+            style="background-color: rgb(4, 107, 249); color: white; width: 160px; padding: 10px; border: none; border-left: none; margin-right: 150px;margin-bottom: 10px; "
+            type="submit">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- three cards -->
+  <div class="container">
+    <div class="row">
+      <!-- 1st  small card  -->
+      <div class="card" style="width: 18rem; margin-left: 100px;">
+        <i class="fa-solid fa-table-columns" id="small-image"></i>
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: left;"><b>Free Shipping Method</b></h5>
+          <p class="threecard-text"> aoremm ixpsacdolor sit <br> ameasecur adipisicing elitsf <br>edasd</p>
+          
+        </div>
+      </div>
+      <!-- 2nd small card -->
+      <div class="card" style="width: 20rem; margin-left: 100px;">
+        <i class="fa-solid fa-unlock-keyhole" id="small-image"></i>
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: left;"><b>Secure Payment System</b> </h5>
+          <p class="threecard-text">aoremm ixpsacdolor sit <br> ameasecur adipisicing elitsf <br>edasd</p>
+            
+        </div>
+      </div>
+      <!-- 3rd small card -->
+      <div class="card" style="width: 20rem;margin-left: 120px;">
+        <i class="fa-solid fa-arrows-rotate" id="small-image"></i>
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: left;"><b>Secure Payment system</b></h5>
+          <p class=" threecard-text">aoremm ixpsacdolor sit <br> ameasecur adipisicing elitsf <br>edasd</p>
+            
+        </div>
+      </div>
+    </div>
+  </div><br><br><br>
+  <!-- group of images -->
+  <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1784 347" width="1510" height="347">
+    <title>New Project</title>
+    
+    <style>
+    </style>
+    <use id="gallery1.psd" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+    <use id="gallery2.psd" href="#img2" transform="matrix(1,0,0,1,356,-1)"/>
+    <use id="gallery3.psd" href="#img3" transform="matrix(1,0,0,1,712,0)"/>
+    <use id="gallery4.psd" href="#img4" transform="matrix(1,0,0,1,1068,0)"/>
+    <use id="gallery5.psd" href="#img5" transform="matrix(1,0,0,1,1426,0)"/>
+  </svg>
+  
+  </div><br><br><br><br>  
+   <!--last-three cards  -->
+   <div class="container">
+    <div class="row">
+      <!-- last-1 card -->
+      <div class="card" style="width: 22rem;">
+        <img src="./Asset/logo/Logo.png" class="card-img-top" style="width: 100px; text-align: right;margin-left: 17px;" alt="...">
+        <div class="card-body" style="line-height: 30px;">
+          
+          <p style="text-align: left;" class="card-text ">63,1st Floor, 16 Main, 8th Cross <br>BTM 1st Stage, BTM Layout, <br>Bengaluru, Karnataka 560029  <br></p>
+         
+        </div>
+      </div>
+      <!-- last 2 card -->
+      <div class="card" style="width: 15rem;">
+        <h5 class="card-title" style="text-align: left;">Card title</h5>
+        <div class="card-body"  >
+          <ul style="text-align: left; text-decoration: none;color: white; line-height:30px; list-style-type: none;padding-inline-start: 0px;">
+          <li style="color: black;">About</li>
+          <li style="color: black;">Offers & Discounts</li>
+          <li style="color: black;">Get Coupon</li>
+          <li style="color: black;">Contact Us</li>
+          </ul>
+          
+        </div>
+      </div>
+      <!-- last 3 card -->
+      <div class="card" style="width: 18rem;">
+        <h5 class="card-title">New Products</h5>
+        <div class="card-body" >
+          <ul style="line-height: 30px; list-style-type: none;padding-inline-start: 0px;text-align: left; ">
+            <li style="color: black;">Woman Cloth</li>
+            <li style="color: black;">Fashion Accessories</li>
+            <li style="color: black;">Man Accessories</li>
+            <li style="color: black;">Rubber made Toys</li>
+          </ul>
+          
+        </div>
+      </div>
+      <!-- last 4 card -->
+      <div class="card" style="width: 25rem; ">
+        <h5 class="card-title" style="margin-right: 30px;">Support</h5>
+        <div class="card-body" >
+         
+          <ul style="line-height: 30px; list-style-type: none;padding-inline-start: 0px;text-align: left; ">
+            <li style="color: black;">Frequently Asked Questions</li>
+            <li style="color: black;">Terms and Conditions</li>
+            <li style="color: black;">Privacy Policy</li>
+            <li style="color: black;">Report a Payment Issue</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+   </div> 
+     <!-- footer  -->
+      <footer>
+        <div>
+          <p style="margin-left: 130px;">Copyright © 2023 All Rights reserved | This Template is made with 
+            💙 by <span style="color: rgb(4, 107, 249);">P.Mohammad AliKhan</span>
+            <span style="margin-left: 250px; font-size: 22px;">
+              <i class="fa-brands fa-twitter" style="color: skyblue;"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-behance"></i>
+              <i class="fa-solid fa-globe"></i>
+            </span>
+          </p>
+          
+        </div>
+      </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
